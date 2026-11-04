@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{BRAND}} — Kontakt & Termin</title>
+<meta name="description" content="Kontakt zu Bel Hair in Kassel: Hartwigstrasse 31, 34125 Kassel, +49 561 877821. Terminanfrage online — auch für Brautstyling mit Abholservice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="concept-bar">
+  Konzept-Entwurf von <a href="https://tiyandegital.com" rel="noopener">Tiyan Digital</a> · Vorschlag für <span data-brand="name">Bel Hair</span> — noch keine echte Website des Salons.
+</div>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Zur Startseite">
+      <span class="name" data-brand="name">Bel Hair</span>
+      <span class="sub">Friseursalon · Kassel</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="mainnav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="brautstyling.html">Brautstyling</a>
+      <a href="preise.html">Preise</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="kontakt.html" aria-current="page">Kontakt</a>
+      <a class="btn" href="kontakt.html#termin">Termin anfragen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section aria-label="Kontakt" id="termin">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Sagen Sie <em>Hallo</em>.</h2>
+        <p>Am schnellsten geht es telefonisch — oder Sie nutzen die Terminanfrage. Wir melden uns persönlich.</p>
+      </div>
+
+      <div class="contact-grid">
+        <aside class="vcard reveal" aria-label="Kontaktdaten">
+          <h2 data-brand="name">Bel Hair</h2>
+          <dl>
+            <div><dt>Adresse</dt><dd><span data-brand="address">Hartwigstrasse 31</span><br><span data-brand="city">34125 Kassel</span></dd></div>
+            <div><dt>Telefon</dt><dd><a class="bignum" href="tel:+49561877821" data-brand="phone">+49 561 877821</a></dd></div>
+            <div><dt>Abholservice</dt><dd>Im Umkreis von <span data-brand="pickup">10 km</span> — zum Probetermin oder am Hochzeitstag.</dd></div>
+            <div><dt>Anfahrt</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Hartwigstrasse+31+34125+Kassel" target="_blank" rel="noopener">Route in Google Maps öffnen ↗</a></dd></div>
+          </dl>
+        </aside>
+
+        <div class="reveal" data-d="1">
+          <form class="book" id="booking-form" novalidate aria-label="Terminanfrage">
+            <h3 style="font-size:28px;margin-bottom:6px">Terminanfrage</h3>
+            <p style="color:var(--muted);font-size:15px;margin-bottom:28px">Unverbindlich — wir melden uns persönlich zur Bestätigung.</p>
+
+            <div class="field">
+              <label for="bf-name">Ihr Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="bf-name" name="name" type="text" autocomplete="name" required aria-describedby="bf-name-err">
+              <p class="err" id="bf-name-err">Bitte geben Sie Ihren Namen an.</p>
+            </div>
+
+            <div class="field">
+              <label for="bf-email">E-Mail <span class="req" aria-hidden="true">*</span></label>
+              <input id="bf-email" name="email" type="email" autocomplete="email" required aria-describedby="bf-email-err">
+              <p class="err" id="bf-email-err">Bitte geben Sie eine gültige E-Mail-Adresse an.</p>
+            </div>
+
+            <div class="field">
+              <label for="bf-phone">Telefon <span style="color:var(--muted);text-transform:none;letter-spacing:0">(optional)</span></label>
+              <input id="bf-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+
+            <div class="field">
+              <label for="bf-service">Worum geht es?</label>
+              <select id="bf-service" name="service">
+                <option>Brautstyling / Probefrisur</option>
+                <option>Schnitt &amp; Styling</option>
+                <option>Color / Strähnen</option>
+                <option>Make-up</option>
+                <option>Sonstiges</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="bf-date">Wunschtermin <span style="color:var(--muted);text-transform:none;letter-spacing:0">(optional)</span></label>
+              <input id="bf-date" name="date" type="date">
+            </div>
+
+            <div class="field">
+              <label for="bf-msg">Ihre Nachricht <span style="color:var(--muted);text-transform:none;letter-spacing:0">(optional)</span></label>
+              <textarea id="bf-msg" name="message" rows="4" placeholder="z. B. Hochzeitstermin, Wunsch-Look, Fragen zum Abholservice …"></textarea>
+            </div>
+
+            <div class="consent">
+              <input id="bf-consent" type="checkbox" required aria-describedby="bf-consent-err">
+              <div>
+                <label for="bf-consent" style="text-transform:none;letter-spacing:0;font-size:14.5px;display:block">Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Terminanfrage verwendet werden. <span class="req" aria-hidden="true">*</span></label>
+                <p class="err" id="bf-consent-err">Bitte stimmen Sie der Verarbeitung zu, damit wir antworten können.</p>
+              </div>
+            </div>
+
+            <button class="btn" type="submit" style="width:100%">Anfrage senden</button>
+            <p class="form-note">Konzept-Demo: Dieses Formular validiert Ihre Eingaben und zeigt eine Bestätigung — in der echten Website wird die Anfrage per E-Mail an den Salon gesendet. Es werden keine Daten gespeichert oder übertragen.</p>
+          </form>
+
+          <div class="form-ok" id="booking-ok" role="status" aria-live="polite">
+            <h3>Vielen Dank, <span id="booking-ok-name">liebe Kundin</span>!</h3>
+            <p>Ihre Anfrage ist bei uns eingegangen (Demo-Bestätigung). Wir melden uns persönlich — versprochen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <p class="name" data-brand="name">Bel Hair</p>
+        <p data-brand="tagline">Friseursalon in Kassel · Spezialistin für Brautstyling</p>
+        <p style="margin-top:16px"><span data-brand="address">Hartwigstrasse 31</span>, <span data-brand="city">34125 Kassel</span><br><a href="tel:+49561877821" data-brand="phone">+49 561 877821</a></p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="brautstyling.html">Brautstyling</a></li>
+          <li><a href="preise.html">Preise</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> <span data-brand="legal">Friseursalon Svetlana Geier</span> · Konzept-Entwurf von <a href="https://tiyandegital.com" rel="noopener">Tiyan Digital</a></span>
+      <span>Reales Referenzprojekt: <a href="https://bluedhaka.com" target="_blank" rel="noopener">bluedhaka.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
