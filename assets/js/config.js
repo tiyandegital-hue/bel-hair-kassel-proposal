@@ -3,18 +3,17 @@
    Um diese Website für ein anderes Unternehmen zu verwenden,
    nur dieses Objekt anpassen — alle Seiten übernehmen die Werte
    automatisch über data-brand="..." Attribute.
+   Alle Angaben verifiziert (Stand: 2026-11-04).
    ============================================================ */
 const BRAND = {
   name:     "Bel Hair",
   legal:    "Friseursalon Svetlana Geier",
   tagline:  "Friseursalon in Kassel · Spezialistin für Brautstyling",
-  address:  "Hartwigstrasse 31",
+  address:  "Hartwigstraße 31",
   city:     "34125 Kassel",
   phone:    "+49 561 877821",
   phoneHref:"tel:+49561877821",
-  pickup:   "10 km",
-  // E-Mail wird erst bei Beauftragung eingetragen — bewusst kein Platzhalter erfunden:
-  email:    ""
+  email:    "svetlana.geier@yahoo.de"
 };
 
 (function applyBrand(){
@@ -22,10 +21,8 @@ const BRAND = {
     var key = el.getAttribute("data-brand");
     if (BRAND[key] !== undefined && BRAND[key] !== "") el.textContent = BRAND[key];
   });
-  var mailto = document.querySelectorAll('[data-brand-mailto]');
-  mailto.forEach(function(a){
-    if (BRAND.email) a.href = "mailto:" + BRAND.email;
-    else a.style.display = "none"; // keine erfundene Adresse anzeigen
+  document.querySelectorAll("[data-brand-mailto]").forEach(function(a){
+    a.href = "mailto:" + BRAND.email;
   });
   document.title = document.title.replace("{{BRAND}}", BRAND.name);
 })();
